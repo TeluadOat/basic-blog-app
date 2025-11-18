@@ -15,10 +15,10 @@ export default function PostDetail() {
     if (!post) return <p>Loading...</p>
 
     return (
-        <div>
+        <div className="post-detail">
             <h3>{post.title}</h3>
             <p>{post.body}</p>
-            <Link to="/posts">← Back to Posts</Link>
+            <Link className="back-link" to="/posts">← Back to Posts</Link>
         </div>
     );
 

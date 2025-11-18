@@ -1,42 +1,58 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+ul.post-list {
+  list-style: none;
+  padding: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+ul.post-list li {
+  background: white;
+  padding: 12px 15px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  border: 1px solid #e3e3e3;
+  transition: box-shadow 0.2s ease;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul.post-list li:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+ul.post-list a {
+  color: royalblue;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-.card {
-  padding: 2em;
+.post-detail {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e3e3e3;
 }
 
-.read-the-docs {
-  color: #888;
-} */
+.post-detail h3 {
+  margin-top: 0;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: royalblue;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link:hover,
+.about a:hover {
+  text-decoration: underline;
+}
+
+.about a {
+  display: inline-block;
+  color: royalblue;
+  text-decoration: none;
+}
+
+.about address {
+  display: flex;
+  gap: 10px;
+}

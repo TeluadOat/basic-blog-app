@@ -16,7 +16,7 @@ export default function Posts() {
     return (
         <div>
             <h2>Posts</h2>
-            <ul>
+            <ul className="post-list">
                 {posts.map(post => {
                     return <li key={post.id}>
                         <Link to={`/posts/${post.id}`}>{post.title}</Link>
