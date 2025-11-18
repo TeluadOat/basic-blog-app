@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function Home() {
     return (
         <div className="home-page">
@@ -11,8 +12,8 @@ export default function Home() {
                 <h3>Get Started</h3>
                 <p>Check out some recent posts or learn more about this project:</p>
                 <div className="action-buttons">
-                    <a href="/posts" className="btn-primary">View Posts</a>
-                    <a href="/about" className="btn-secondary">About</a>
+                    <Link to="/posts" className="btn-primary">View Posts</Link>
+                    <Link to="/about" className="btn-secondary">About</Link>
                 </div>
             </section>
 
