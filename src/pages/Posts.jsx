@@ -13,7 +13,7 @@ export default function Posts() {
         getPosts();
     }, []);
 
-    if (posts.length === 0) return <p style={{ textAlign: "center" }}>Loading posts...</p>;
+    if (posts.length === 0) return <p style={{ textAlign: "center", flex: "1" }}>Loading posts...</p>;
 
     return (
         <div>
