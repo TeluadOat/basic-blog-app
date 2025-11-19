@@ -22,7 +22,9 @@
 
 .contact-info {
     display: flex;
-    gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 8px;
+    width: 100%;
+    max-width: 300px;
 }
